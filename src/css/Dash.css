@@ -1,0 +1,22 @@
+.todo-form {
+    padding: 10px;
+    background-color: lightcoral;
+    text-align: center;
+}
+.todo-form input {
+    width: 75%;
+    border-radius: 5px;
+    border: none;
+    padding: 7.5px;
+    font-size: 15pt;
+    font-family: Manrope;
+    transition: 0.2s;
+}
+.todo-form input:focus {
+    box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.1);
+}
+@media only screen and (max-width: 600px) {
+    .todo-form input{
+        width: 100%;
+    }
+}

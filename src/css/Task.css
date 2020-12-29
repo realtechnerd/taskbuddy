@@ -1,0 +1,22 @@
+.Task {
+    background-color: #eee;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: 0.2s;
+    user-select: none;
+    font-family: Manrope;
+    box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.1);
+}
+.Task h2 {
+    padding: 10px;
+    font-size: 20pt;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+.Task:hover {
+    background-color: lightcoral;
+    color: #fff;
+    transform: scale(1.02);
+}

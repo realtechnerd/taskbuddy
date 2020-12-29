@@ -1,0 +1,10 @@
+a.dash-brand {
+    background: linear-gradient(90deg,#ff416c,#ff4b2b);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 18pt;
+    font-family: Manrope;
+}
+.nav-shadow {
+    box-shadow: 0 5px 15px rgba(56,56,56,.1);
+}

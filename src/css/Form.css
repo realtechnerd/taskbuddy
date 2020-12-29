@@ -1,0 +1,29 @@
+.form-card {
+    border-radius: 1rem !important;
+    border: none !important;
+    font-family: Inter;
+}
+.form-shadow {
+    box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.1);
+}
+.log-in {
+    color: #fff;
+    font-family: Manrope;
+    font-size: 15pt;
+}
+.btn-primary {
+    border-radius: 1rem;
+}
+#title {
+    color: #fff;
+    font-family: Manrope;
+    text-align: center;
+}
+.signup {
+    height: 100vh;
+    background: linear-gradient(90deg,#ff416c,#ff4b2b);
+}
+.login {
+    height: 100vh;
+    background: linear-gradient(90deg,#ff416c,#ff4b2b);
+}

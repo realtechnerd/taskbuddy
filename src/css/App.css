@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Manrope&display=swap');
+@import url('https://realtechnerd.github.io/button.css/style.css');
+* {
+    outline: none !important;
+}
+.Container {
+    margin-left: 15% !important;
+    margin-right: 15% !important;
+}
+@media only screen and (max-width: 600px) {
+    .Container {
+        margin-left: 10px !important;
+        margin-right: 10px !important;
+    }
+}

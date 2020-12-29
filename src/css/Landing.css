@@ -1,0 +1,10 @@
+.Landing {
+    height: 100vh;
+    background: linear-gradient(90deg,#ff416c,#ff4b2b);
+}
+.landing-jumbotron {
+    text-align: center;
+    color: #fff;
+    background-color: transparent !important;
+    font-family: Manrope;
+}
