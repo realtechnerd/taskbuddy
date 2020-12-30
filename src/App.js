@@ -10,8 +10,7 @@ import ForgotPassword from './views/ForgotPassword';
 
 function App() {
   return (
-    <>
-      
+    <> 
       <AuthProvider>
         <Router>
           <Switch>
