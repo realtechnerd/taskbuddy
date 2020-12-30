@@ -3,3 +3,8 @@
     text-align: center;
     padding: 5px;
 }
+@media only screen and (max-width: 600px) {
+    .Loader img {
+        width: 100% !important;
+    }
+}
