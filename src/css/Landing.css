@@ -1,5 +1,5 @@
 .Landing {
-    height: 100vh;
+    height: calc(100vh - 62px);
     background: linear-gradient(90deg,#ff416c,#ff4b2b);
 }
 .landing-jumbotron {

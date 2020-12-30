@@ -10,13 +10,15 @@ export default function Landing() {
       <>
       <LandBar/>
         <div className="Landing">
-            <div class="landing-jumbotron d-flex align-items-center justify-content-end" style={{height: "100vh"}}>
-              <div class="container">
-                <h1 class="display-4">TaskBuddy <Icon icon={faDog}/></h1>
-                <p class="lead">Stop Slacking. Start Doing.</p>
-                <Link class="b bprimary lb blg" to="/signup">Sign Up</Link>
-                <Link class="b bprimary lb blg" to="/login" style={{marginLeft: "5px"}}>Sign In</Link>
+            <div className="landing-jumbotron jumbotron" style={{paddingTop: "8rem"}}>
+              <div className="container">
+                <h1 className="display-4">TaskBuddy <Icon icon={faDog}/></h1>
+                <p className="lead">Stop Slacking. Start Rocking.</p>
+                <Link className="b bprimary lb blg" to="/signup">Sign Up</Link>
+                <Link className="b bprimary lb blg" to="/login" style={{marginLeft: "15px"}}>Sign In</Link>
               </div>
+              <br/>
+              <h3>A Todo List app to make your life easier.</h3>
             </div>
         </div>
       </>

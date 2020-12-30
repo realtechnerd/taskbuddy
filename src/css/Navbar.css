@@ -8,3 +8,6 @@ a.dash-brand {
 .nav-shadow {
     box-shadow: 0 5px 15px rgba(56,56,56,.1);
 }
+.land-nav {
+    font-family: Manrope !important;
+}

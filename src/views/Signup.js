@@ -38,7 +38,7 @@ export default function Signup() {
         <div className="signup">
         <Container className="d-flex align-items-center justify-content-center" style={{ minHeight: "100vh" }}>
         <div className="w-100" style={{maxWidth: "400px"}}>
-        <h1 id="title">TaskBuddy <Icon icon={faDog} /></h1>
+        <Link id="titlelink" to="/"><h1 id="title" className="mb-2">TaskBuddy <Icon icon={faDog} /></h1></Link>
             <div className="form-card card form-shadow">
                 <div className="card-body">
                     <h2 className="text-center">Sign Up</h2>

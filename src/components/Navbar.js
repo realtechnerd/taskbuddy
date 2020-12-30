@@ -1,7 +1,4 @@
 import React from 'react'
-import { faDog } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon as Icon } from '@fortawesome/react-fontawesome'
-import { Link } from 'react-router-dom';
 import "../css/Navbar.css";
 import { useAuth } from "../contexts/AuthContext";
 
