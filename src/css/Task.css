@@ -1,5 +1,5 @@
 .Task {
-    background-color: #eee;
+    background-color: #fff;
     padding: 5px;
     border-radius: 5px;
     margin-top: 15px;
@@ -18,5 +18,8 @@
 .Task:hover {
     background-color: lightcoral;
     color: #fff;
-    transform: scale(1.02);
+    transform: scale(1.01);
+}
+.Task:active {
+    transform: scale(0.99);
 }
