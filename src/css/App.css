@@ -16,3 +16,25 @@
 #titlelink {
     text-decoration: none !important;
 }
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #121212 !important;
+    }
+    .Task {
+        background-color: #333 !important;
+        color: #fff;
+    }
+    .navbar {
+        background-color: #121212 !important;
+    }
+    .todo-form {
+        background: #333 !important;
+    }
+    .todo-form input {
+        background: #121212 !important;
+        color: #fff;
+    }
+    .Loader {
+        color: #fff !important;
+    }
+}

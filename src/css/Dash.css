@@ -23,3 +23,7 @@
         margin-bottom: 10px;
     }
 }
+.Loader {
+    height: calc(100vh - 129px) !important;
+    color: #000;
+}

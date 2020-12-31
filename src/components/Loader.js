@@ -4,8 +4,8 @@ import LoadImg from "../imgs/loader.gif";
 
 export default function Loader() {
     return (
-        <div className="Loader">
-            <img src={LoadImg} alt="Loading.."/>
+        <div className="Loader d-flex align-items-center justify-content-center">
+            <h1>Loading..</h1>
         </div>
     )
 }
