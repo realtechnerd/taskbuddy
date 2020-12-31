@@ -65,7 +65,7 @@ export default function Dash() {
         getTasks();
     }, [])
 
-    const minTime = new Date().toISOString().split("T")[0];
+    const minTime = moment().format("YYYY-MM-DD");
 
     const mapData = tasks && tasks.map(data => (
         <Task key={data.id} title={data.title} delete={() => deleteTask(data)} due={data.due}/>
