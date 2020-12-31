@@ -75,7 +75,7 @@ export default function Dash() {
         <Navbar user={currentUser.email}/>
         <div className="Dash">
             <form className="todo-form nav-shadow" onSubmit={addTask}>
-                <input id="titleinput" type="text" placeholder="Add a task" onChange={e => setTitle(e.target.value)} value={title} required style={{marginRight: "10px"}}/>
+                <input id="titleinput" type="text" placeholder="Add a task" onChange={e => setTitle(e.target.value)} value={title} required style={{marginRight: "10px"}} autoComplete="off"/>
                 <input type="date" min={minTime} onChange={e => setDue(e.target.value)} value={due}/>
             </form>
         {loading ? <Loader/> : null}
