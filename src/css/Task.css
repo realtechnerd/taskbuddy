@@ -23,3 +23,8 @@
 .Task:active {
     transform: scale(0.99);
 }
+.Task p {
+    padding: 10px;
+    margin-bottom: 0px !important;
+    margin-top: -14px !important;
+}
