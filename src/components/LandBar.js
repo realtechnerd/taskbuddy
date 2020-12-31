@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export default function LandBar() {
     return (
-        <nav className="nav-shadow dash-nav navbar navbar-expand-lg navbar-light bg-light">
+        <nav className="nav-shadow navbar navbar-expand-lg navbar-light bg-light">
           <Link to="/" className="dash-brand navbar-brand">TaskBuddy</Link>
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
