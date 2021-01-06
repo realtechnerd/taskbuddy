@@ -13,7 +13,7 @@ export default function Dash() {
     const [tasks, setTasks] = useState()
     const [loading, setLoading] = useState(false);
     const [title, setTitle] = useState("");
-    const [due, setDue] = useState();
+    const [due, setDue] = useState(moment().format("YYYY-MM-DD"));
     const { currentUser }= useAuth()
 
     const ref = firestoreApp.collection(`todos/${currentUser.uid}/tasks/`);
@@ -21,14 +21,14 @@ export default function Dash() {
     function getTasks() {
         setLoading(true);
         ref
-            .orderBy("timestamp", "desc")
+            .orderBy("due", "asc")
             .onSnapshot(querySnapshot => {
-            const items = [];
-            querySnapshot.forEach(doc => {
-                items.push(doc.data())
-            })
+                const items = [];
+                querySnapshot.forEach(doc => {
+                    items.push(doc.data())
+                })
             setTasks(items);
-            setLoading(false)
+            setLoading(false);
         })
     }
 
@@ -38,9 +38,8 @@ export default function Dash() {
           title,
           id: uuidv4(),
           timestamp: firebase.firestore.FieldValue.serverTimestamp(),
-          due: !due ? "" : `Due: ${moment(due).format("LL")}`
-        };
-
+          due: !due ? "" : moment(due).toDate()
+        }
     
         ref
           .doc(newTask.id)
@@ -64,6 +63,7 @@ export default function Dash() {
     useEffect(() => {
         getTasks();
     }, [])
+
 
     const minTime = moment().format("YYYY-MM-DD");
 

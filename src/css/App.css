@@ -24,6 +24,9 @@
         background-color: #333 !important;
         color: #fff;
     }
+    .Task:hover {
+        background-color: #000 !important;
+    }
     .dash-nav {
         background-color: #121212 !important;
     }

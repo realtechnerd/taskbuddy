@@ -2,10 +2,16 @@ import React from 'react'
 import "../css/Landing.css";
 import { FontAwesomeIcon as Icon } from '@fortawesome/react-fontawesome'
 import { faDog } from '@fortawesome/free-solid-svg-icons'
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import LandBar from "../components/LandBar";
+import { useAuth } from '../contexts/AuthContext';
 
 export default function Landing() {
+    const { currentUser } = useAuth();
+    const history = useHistory();
+    if (currentUser) {
+      history.push('/dashboard');
+    }
     return (
       <>
       <LandBar/>
