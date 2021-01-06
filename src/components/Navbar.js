@@ -5,7 +5,7 @@ import { useAuth } from "../contexts/AuthContext";
 export default function Navbar(props) {
     const { logout } = useAuth();
     return (
-        <nav className="nav-shadow dash-nav navbar navbar-expand-lg dash-nav">
+        <nav className="nav-shadow dash-nav navbar navbar-expand-lg dash-nav" style={props.style}>
           <a className="dash-brand navbar-brand">TaskBuddy</a>
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>

@@ -72,13 +72,13 @@ export default function Dash() {
     ))
     return (
         <>
-        <Navbar user={currentUser.email}/>
-        <div className="Dash">
+        {loading ? <Loader/> : null}
+        <Navbar user={currentUser.email} style={{display: loading && "none"}}/>
+        <div className="Dash" style={{display: loading && "none"}}>
             <form className="todo-form nav-shadow" onSubmit={addTask}>
                 <input id="titleinput" type="text" placeholder="Add a task" onChange={e => setTitle(e.target.value)} value={title} required style={{marginRight: "10px"}} autoComplete="off"/>
                 <input type="date" min={minTime} onChange={e => setDue(e.target.value)} value={due}/>
             </form>
-        {loading ? <Loader/> : null}
         <div className="tasks Container">
             {mapData}
         </div> 
