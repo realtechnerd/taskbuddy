@@ -8,13 +8,26 @@ import firebase from 'firebase';
 import { v4 as uuidv4 } from 'uuid';
 import Loader from '../components/Loader';
 import moment from 'moment';
+import { useSnackbar } from 'react-simple-snackbar'
+import { useMediaPredicate } from "react-media-hook";
+
+
 
 export default function Dash() {
     const [tasks, setTasks] = useState()
     const [loading, setLoading] = useState(false);
-    const [title, setTitle] = useState("");
+    const [title, setTitle] = useState(""); 
     const [due, setDue] = useState(moment().format("YYYY-MM-DD"));
     const { currentUser }= useAuth()
+    const preferredTheme = useMediaPredicate("(prefers-color-scheme: dark)") ? "#333" : "linear-gradient(90deg,#ff416c,#ff4b2b)";
+    const snackStyles = {
+        style: {
+            fontFamily: 'Manrope',
+            background: preferredTheme,
+            borderRadius: "1rem"
+        }
+    }
+    const [openSnackbar] = useSnackbar(snackStyles);
 
     const ref = firestoreApp.collection(`todos/${currentUser.uid}/tasks/`);
 
@@ -58,6 +71,7 @@ export default function Dash() {
           .catch((err) => {
             console.error(err);
           });
+        openSnackbar('Good for you! You just completed a task!')
       }
 
     useEffect(() => {

@@ -7,6 +7,7 @@ import Landing from './views/Landing';
 import PrivateRoute from './components/PrivateRoute';
 import Dash from "./views/Dash";
 import ForgotPassword from './views/ForgotPassword';
+import SnackbarProvider from 'react-simple-snackbar'
 
 function App() {
   return (
@@ -18,7 +19,9 @@ function App() {
             <Route path="/signup" component={Signup}/>
             <Route path="/login" component={Login}/>
             <Route path="/forgot-password" component={ForgotPassword}/>
-            <PrivateRoute path="/dashboard" component={Dash}/>
+            <SnackbarProvider>
+              <PrivateRoute path="/dashboard" component={Dash}/>
+            </SnackbarProvider>
           </Switch>
         </Router>
       </AuthProvider>
